@@ -28,7 +28,7 @@ const styles: { [key: string]: CSSProperties } = {
     flexDirection: 'column', // Stack header, content, and bottom bar vertically
     height: '100vh',
     width: '100vw',
-    backgroundColor: '#92BDF6', // Dark background
+    backgroundColor: '#92BDF6',
     padding: '20px',
     boxSizing: 'border-box',
   },
