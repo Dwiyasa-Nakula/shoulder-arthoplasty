@@ -1,5 +1,5 @@
 import React from 'react';
-import LoginPage from './LoginPage'; // Relative path to your component
+import LoginPage from './LoginPage';
 
 const Home: React.FC = () => {
   return (

@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from 'next/link';
+import type { CSSProperties } from 'react';
 
 const LoginPage = () => {
   return (
@@ -19,14 +21,16 @@ const LoginPage = () => {
           <a style={styles.forgotPassword} href="#">Forgot Password?</a>
           <button style={styles.button}>Log in</button>
           <hr style={styles.hr} />
-          <p style={styles.signupText}>SIGN UP HERE IF YOU DON&apos;T HAVE ACCOUNT.</p>
+          <Link href="/signup" legacyBehavior>
+            <p style={styles.signupText}>SIGN UP HERE IF YOU DON&apos;T HAVE ACCOUNT.</p>
+          </Link>
         </div>
       </div>
     </div>
   );
 };
 
-const styles = {
+const styles: { [key: string]: CSSProperties } = {
   container: {
     display: 'flex',
     height: '100vh', // Make it full viewport height
@@ -74,6 +78,7 @@ const styles = {
     backgroundColor: '#ffff',
     borderRadius: '4px',
     boxSizing: 'border-box',
+    color: 'black',
   },
   forgotPassword: {
     display: 'block',
